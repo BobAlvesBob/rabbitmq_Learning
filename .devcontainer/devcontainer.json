@@ -1,0 +1,25 @@
+{
+	"name": "Java & PostgreSQL",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces",
+	"forwardPorts": [
+		8080,
+		5432,
+		5672,
+		15672
+	],
+	"features": {
+		"ghcr.io/devcontainers-extra/features/springboot-sdkman:2": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"pivotal.vscode-spring-boot",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	},
+	"postCreateCommand": "mvn --version"
+}
