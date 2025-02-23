@@ -2,8 +2,9 @@ package com.testRabbitmq.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import com.microservice.estoquepreco.EstoquePrecoApplication;
 
-@SpringBootTest
+@SpringBootTest(classes = EstoquePrecoApplication.class)
 class DemoApplicationTests {
 
 	@Test
