@@ -18,7 +18,7 @@ services:
       POSTGRES_HOSTNAME: postgresdb
     
     volumes:
-      - ..:/workspaces:cached
+      - ..:/workspaces/RabbitMQTest2:cached
 
 
     # Overrides default command so things don't shut down after the process ends.
